@@ -46,6 +46,12 @@ const imageRemotePatterns = [
     port: "",
     pathname: "/**",
   },
+  {
+    protocol: "https",
+    hostname: "*.kultify.com",
+    port: "",
+    pathname: "/**",
+  },
 ];
 
 if (process.env.ZITADEL_API_URL) {

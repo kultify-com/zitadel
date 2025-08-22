@@ -614,7 +614,7 @@ export async function createInviteCode({
   userId: string;
 }) {
   let medium = create(SendInviteCodeSchema, {
-    applicationName: "Typescript Login",
+    applicationName: "Kultify",
   });
 
   medium = {

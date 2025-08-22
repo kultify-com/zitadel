@@ -2,7 +2,7 @@ import { getAllSessions } from "@/lib/cookies";
 import { idpTypeToSlug } from "@/lib/idp";
 import { loginWithOIDCAndSession } from "@/lib/oidc";
 import { loginWithSAMLAndSession } from "@/lib/saml";
-import { sendLoginname, SendLoginnameCommand } from "@/lib/server/loginname";
+import { SendLoginnameCommand, sendLoginname } from "@/lib/server/loginname";
 import { constructUrl, getServiceUrlFromHeaders } from "@/lib/service-url";
 import { findValidSession } from "@/lib/session";
 import {
@@ -451,7 +451,8 @@ export async function GET(request: NextRequest) {
       loginNameUrl.searchParams.set("requestId", requestId);
       if (authRequest?.loginHint) {
         loginNameUrl.searchParams.set("loginName", authRequest.loginHint);
-        loginNameUrl.searchParams.set("submit", "true"); // autosubmit
+        // Kultify: disable because we want to show the idp buttons
+        // loginNameUrl.searchParams.set("submit", "true"); // autosubmit
       }
 
       if (organization) {

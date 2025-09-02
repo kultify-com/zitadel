@@ -1,3 +1,8 @@
+# Main Kultify Changes
+
+- Fix Name of application
+- Don't autofill name for loginHint
+
 <p align="center">
     <img src="./docs/static/logos/zitadel-logo-dark@2x.png#gh-light-mode-only" alt="Zitadel Logo" max-height="200px" width="auto" />
     <img src="./docs/static/logos/zitadel-logo-light@2x.png#gh-dark-mode-only" alt="Zitadel Logo" max-height="200px" width="auto" />
@@ -62,10 +67,10 @@ With ZITADEL, you are assured of a robust and customizable turnkey solution for 
 
 Deploying ZITADEL locally takes less than 3 minutes. Go ahead and give it a try!
 
-* [Linux](https://zitadel.com/docs/self-hosting/deploy/linux)
-* [MacOS](https://zitadel.com/docs/self-hosting/deploy/macos)
-* [Docker compose](https://zitadel.com/docs/self-hosting/deploy/compose)
-* [Kubernetes](https://zitadel.com/docs/self-hosting/deploy/kubernetes)
+- [Linux](https://zitadel.com/docs/self-hosting/deploy/linux)
+- [MacOS](https://zitadel.com/docs/self-hosting/deploy/macos)
+- [Docker compose](https://zitadel.com/docs/self-hosting/deploy/compose)
+- [Kubernetes](https://zitadel.com/docs/self-hosting/deploy/kubernetes)
 
 See all guides [here](https://zitadel.com/docs/self-hosting/deploy/overview)
 
@@ -74,11 +79,12 @@ See all guides [here](https://zitadel.com/docs/self-hosting/deploy/overview)
 ### Setup ZITADEL Cloud (SaaS)
 
 If you want to experience a hands-free ZITADEL, you should use [ZITADEL Cloud](https://zitadel.com).
-Available data regions are: 
-* 🇺🇸 United States
-* 🇪🇺 European Union
-* 🇦🇺 Australia
-* 🇨🇭 Switzerland
+Available data regions are:
+
+- 🇺🇸 United States
+- 🇪🇺 European Union
+- 🇦🇺 Australia
+- 🇨🇭 Switzerland
 
 ZITADEL Cloud comes with a free tier, providing you with all the same features as the open-source version.
 Learn more about the [pay-as-you-go pricing](https://zitadel.com/pricing).
@@ -117,11 +123,11 @@ Authentication
 - Username / Password
 - Multifactor authentication with OTP, U2F, Email OTP, SMS OTP
 - [LDAP](https://zitadel.com/docs/guides/integrate/identity-providers/ldap)
-- [External enterprise identity providers  and social logins](https://zitadel.com/docs/guides/integrate/identity-providers/introduction)
+- [External enterprise identity providers and social logins](https://zitadel.com/docs/guides/integrate/identity-providers/introduction)
 - [Device authorization](https://zitadel.com/docs/guides/solution-scenarios/device-authorization)
 - [OpenID Connect certified](https://openid.net/certification/#OPs) => [OIDC Endpoints](https://zitadel.com/docs/apis/openidoauth/endpoints)
 - [SAML 2.0](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html) => [SAML Endpoints](https://zitadel.com/docs/apis/saml/endpoints)
-- [Custom sessions](https://zitadel.com/docs/guides/integrate/login-ui/username-password) if you need to go beyond OIDC or SAML 
+- [Custom sessions](https://zitadel.com/docs/guides/integrate/login-ui/username-password) if you need to go beyond OIDC or SAML
 - [Machine-to-machine](https://zitadel.com/docs/guides/integrate/service-users/authenticate-service-users) with JWT profile, Personal Access Tokens (PAT), and Client Credentials
 - [Token exchange and impersonation](https://zitadel.com/docs/guides/integrate/token-exchange)
 - [Beta: Hosted Login V2](https://zitadel.com/docs/guides/integrate/login/hosted-login#hosted-login-version-2-beta) our new login version 2.0
@@ -145,11 +151,13 @@ Integration
 - [Hosted and custom login user interface](https://zitadel.com/docs/guides/integrate/login/login-users)
 
 Self-Service
+
 - [Self-registration](https://zitadel.com/docs/concepts/features/selfservice#registration) including verification
 - [Self-service](https://zitadel.com/docs/concepts/features/selfservice) for end-users, business customers, and administrators
 - [Administration UI (Console)](https://zitadel.com/docs/guides/manage/console/overview)
 
 Deployment
+
 - [Postgres](https://zitadel.com/docs/self-hosting/manage/database#postgres) (version >= 14)
 - [Zero Downtime Updates](https://zitadel.com/docs/concepts/architecture/solution#zero-downtime-updates)
 - [High scalability](https://zitadel.com/docs/self-hosting/manage/production)
